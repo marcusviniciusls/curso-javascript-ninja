@@ -39,10 +39,10 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function somaTresNumeros(valorA, valorB, valorC){
-    if(valorA == null || valorB == null || valorC == null){
+    if(valorA === undefined || valorB == undefined || valorC == undefined){
         return "Preencha todos os valores corretamente!";
     }
-    return valorA * valorB * valorC;
+    return valorA * valorB * valorC + 2;
 }
 
 // Invoque a função criada acima, passando só dois números como argumento.
