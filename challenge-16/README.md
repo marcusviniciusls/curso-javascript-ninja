@@ -64,7 +64,7 @@ Mostre no console esse nome, mas com as letras intercalando entre maiúsculas
 e minúsculas.
 - Detalhe: o código abaixo deve funcionar da mesma forma para qualquer nome,
 de qualquer tamanho, escrito de qualquer forma.
-Ex.: Nomes que deveriam funcionar: "Fernando", "RoBertO", "gabriEla", etc.
+Ex.: Nomes que deveriam funcionar: "FeRnAnDo", "RoBeRtO", "GaBrIeLa", etc.
 */
 console.log( '\nNome com letras intercaladas entre caixa alta e baixa:' );
 // ?

@@ -74,14 +74,15 @@ Usando o replace(), faça a string "Roberto" virar "Roberta".
 Mostre o resultado no console.
 */
 var name = 'Roberto';
-console.log( 'Era "Roberto", agora é: ' + name.replace('o', 'a'));
+console.log( 'Era "Roberto", agora é: ' + name.replaceAll('to', 'ta'));
 // ?
 
 /*
-Mostre no console a parte "nando" da string "Fernando". Use o método que
+Mostre no console a parte "nando" da string "Fernando". Use o método queß
 faz a busca do final para o início da string.
 */
-console.log( '\nParte de uma string:' );
+name = 'Fernando';
+console.log( 'Parte de uma string: ' + name.substring(3));
 // ?
 
 /*
@@ -91,8 +92,18 @@ Mostre no console esse nome, mas com as letras intercalando entre maiúsculas
 e minúsculas.
 - Detalhe: o código abaixo deve funcionar da mesma forma para qualquer nome,
 de qualquer tamanho, escrito de qualquer forma.
-Ex.: Nomes que deveriam funcionar: "Fernando", "RoBertO", "gabriEla", etc.
+Ex.: Nomes que deveriam funcionar: "FeRnAnDo", "RoBeRtO", "GaBrIeLa", etc.
 */
-console.log( '\nNome com letras intercaladas entre caixa alta e baixa:' );
-// ?
+var myName = 'Marcus';
+var newName = '';
+console.log( 'Nome com letras intercaladas entre caixa alta e baixa:' );
+for(var i =0; i<myName.length; i++){
+    if(i%2===0){
+        newName = newName + myName.charAt(i).toUpperCase();
+    } else if(i%2===1){
+        newName = newName + myName.charAt(i).toLowerCase();
+    }
+}
+console.log(newName);
+
 })();
