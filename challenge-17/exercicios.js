@@ -78,6 +78,7 @@ Após criar a função, faça o replace das datas no texto, mostrando no
 console o resultado.
 */
 console.log( '\nReplace de datas:' );
-function replaceDatas()
+function replaceDatas(text, regex){
+}
 // ?
 })();
